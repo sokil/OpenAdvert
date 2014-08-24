@@ -1,0 +1,28 @@
+{
+    "name": "sokil/openadvert",
+    "description": "Advertising manager",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmytro Sokil",
+            "email": "dmytro.sokil@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii"               : "1.1.15",
+        "sokil/php-vast"            : "0.*",
+        "sokil/php-mongo"           : "1.*",
+        "sokil/php-mongo-migrator"  : "dev-master",
+        "sokil/php-upload"          : "0.5.3",
+        "php-ffmpeg/php-ffmpeg"     : "dev-master",
+        "phpmailer/phpmailer"       : "dev-master",
+        "psr/log"                   : "~1.0",
+        "sokil/php-isocodes"        : "1.0.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "MongoAdvertDb\\": "application/models/",
+            "Report\\": "application/models/"
+        }
+    }
+}

@@ -1,0 +1,64 @@
+html, body
+{
+    height: 100%;
+    width: 100%;
+}
+
+body
+{
+    padding-top: 70px;
+}
+
+.bottom-space
+{
+    margin-bottom: 10px;
+}
+
+.top-space
+{
+    margin-top: 10px;
+}
+
+.prel
+{
+    background: url(/images/prel.gif) no-repeat left center;
+    padding: 0 25px;
+}
+
+/**
+ * Deleted input group
+ */
+.input-group.deleted,
+div.deleted,
+tr.deleted
+{
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    color: red !important;
+}
+
+.input-group.deleted a,
+div.deleted a
+{
+    color: red;
+}
+
+/**
+ * Form
+ */
+
+.form-group.bordered
+{
+    background: #efefef;
+    border-left: 5px solid red;
+    margin: 5px 0 0 0;
+    padding: 10px;
+}
+
+/**
+ * Fixes
+ */
+.pickmeup
+{
+    z-index: 9000;
+}

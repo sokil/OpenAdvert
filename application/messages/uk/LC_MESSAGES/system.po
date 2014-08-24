@@ -1,0 +1,1275 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Ad\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-08-24 14:21+0300\n"
+"PO-Revision-Date: 2014-08-24 14:21+0300\n"
+"Last-Translator: Dmytro Sokil <dmytro.sokil@gmail.com>\n"
+"Language-Team: Dmytro Sokil <dmytro.sokil@gmail.com>\n"
+"Language: uk_UA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: views\n"
+"X-Poedit-SearchPath-1: components\n"
+"X-Poedit-SearchPath-2: extensions\n"
+"X-Poedit-SearchPath-3: controllers\n"
+"X-Poedit-SearchPath-4: models\n"
+"X-Poedit-SearchPath-5: widgets\n"
+
+#: views/log/index.php:6 views/log/view.php:4 views/layouts/main.php:63
+#: controllers/LogController.php:8
+msgid "Log"
+msgstr "Журнал"
+
+#: views/log/index.php:16 views/log/view.php:21
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/TimeOption.php:11
+msgid "Time"
+msgstr "Час"
+
+#: views/log/index.php:23 views/log/view.php:13
+msgid "Level"
+msgstr "Рівень"
+
+#: views/log/index.php:29 views/log/view.php:17
+msgid "Category"
+msgstr "Категорія"
+
+#: views/log/index.php:34 views/log/view.php:25
+msgid "Message"
+msgstr "Повідомлення"
+
+#: views/log/view.php:30
+msgid "Request"
+msgstr "Адреса"
+
+#: views/log/view.php:35
+msgid "Browser"
+msgstr "Браузер"
+
+#: views/mail/update_user_info.php:2
+msgid "Your profile was changed."
+msgstr "Ваш профіль було змінено"
+
+#: views/mail/update_user_info.php:3
+msgid "To sign in on site use this e-mail and password"
+msgstr ""
+"Для входу на сайт використовуйте наведені нижче адресу електронної пошти і "
+"пароль"
+
+#: views/mail/update_user_info.php:4 views/mail/after_registration.php:4
+#, php-format
+msgid "Email: %s"
+msgstr "Електронна пошта: %s"
+
+#: views/mail/update_user_info.php:6 views/mail/after_registration.php:6
+#, php-format
+msgid "Password: %s"
+msgstr "Пароль: %s"
+
+#: views/mail/after_registration.php:2
+#, php-format
+msgid "You have successfully registered in %s"
+msgstr "Вітаємо, Ви були успішно зареєстровані на сайті %s"
+
+#: views/mail/after_registration.php:3
+#, php-format
+msgid "Site: %s"
+msgstr "Сайт: %s"
+
+#: views/mail/new_campaign.php:1
+#, php-format
+msgid "New campaign \"%s\""
+msgstr "Нова кампанія %s"
+
+#: views/mail/new_campaign.php:3
+#, php-format
+msgid "Status: %s"
+msgstr "Статус: %s"
+
+#: views/mail/new_campaign.php:4
+#, php-format
+msgid "Start date: %s"
+msgstr "Дата початку: %s"
+
+#: views/mail/new_campaign.php:5
+#, php-format
+msgid "Stop date: %s"
+msgstr "Дата завершення: %s"
+
+#: views/mail/new_campaign.php:6
+#, php-format
+msgid "Impression limit: %s"
+msgstr "Ліміт переглядів: %s"
+
+#: views/mail/new_campaign.php:7
+#, php-format
+msgid "Click limit: %s"
+msgstr "Ліміт кліків: %s"
+
+#: views/mail/new_campaign.php:8
+#, php-format
+msgid "Cost: %s"
+msgstr "Вартість: %s"
+
+#: views/campaigns/edit.php:4 views/campaigns/list.php:4
+#: views/advertisers/form.php:3 views/advertisers/index.php:3
+#: views/advertisers/index.php:6 views/users/list.php:12
+#: views/stat/index.php:8 views/banners/edit.php:3 views/banners/list.php:3
+msgid "Advertisers"
+msgstr "Рекламодавці"
+
+#: views/campaigns/edit.php:5 views/campaigns/edit.php:10
+#: views/campaigns/list.php:5 views/campaigns/list.php:9
+#: views/banners/edit.php:4 views/banners/list.php:4
+#, php-format
+msgid "Campaigns of \"%s\""
+msgstr "Кампанії \"%s\""
+
+#: views/campaigns/edit.php:6 views/campaigns/edit.php:11
+msgid "New campaign"
+msgstr "Додати кампанію"
+
+#: views/campaigns/edit.php:21 views/campaigns/list.php:29
+msgid "Campaign name"
+msgstr "Назва кампанії"
+
+#: views/campaigns/edit.php:28 views/campaigns/list.php:43
+msgid "Start date"
+msgstr "Дата початку"
+
+#: views/campaigns/edit.php:35 views/campaigns/list.php:44
+msgid "Stop date"
+msgstr "Дата завершення"
+
+#: views/campaigns/edit.php:42
+msgid "Limit views"
+msgstr "Ліміт переглядів"
+
+#: views/campaigns/edit.php:49
+msgid "Limit clicks"
+msgstr "Ліміт кліків"
+
+#: views/campaigns/edit.php:57
+msgid "Pricing model"
+msgstr "Цінова модель"
+
+#: views/campaigns/edit.php:60
+msgid "Cost per thousand impressions"
+msgstr "Ціна за тисячу показів"
+
+#: views/campaigns/edit.php:61
+msgid "Cost per clicks"
+msgstr "Ціна за клік"
+
+#: views/campaigns/edit.php:66
+msgid "Price"
+msgstr "Вартість"
+
+#: views/campaigns/edit.php:74
+msgid "Limit and pay by unique events only"
+msgstr "Обмежувати і оплачувати лише унікальні події"
+
+#: views/campaigns/edit.php:82
+msgid "Publish"
+msgstr "Опублікувати"
+
+#: views/campaigns/edit.php:84 views/advertisers/form.php:49
+#: views/users/edit.php:40 views/zones/edit.php:34
+#: views/banners/editParameters.php:97 views/banners/addmediafileform.php:27
+#: views/banners/editLinkedZones.php:27
+#: views/banners/editDeliveryOptions.php:33
+msgid "Save"
+msgstr "Зберегти"
+
+#: views/campaigns/edit.php:98 views/campaigns/edit.php:119
+#: views/stat/advertiser.php:33 views/stat/partner.php:33
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/WeekDayOption.php:22
+msgid "Sunday"
+msgstr "Неділья"
+
+#: views/campaigns/edit.php:98 views/campaigns/edit.php:119
+#: views/stat/advertiser.php:33 views/stat/partner.php:33
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/WeekDayOption.php:16
+msgid "Monday"
+msgstr "Понеділок"
+
+#: views/campaigns/edit.php:98 views/campaigns/edit.php:119
+#: views/stat/advertiser.php:33 views/stat/partner.php:33
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/WeekDayOption.php:17
+msgid "Tuesday"
+msgstr "Вівторок"
+
+#: views/campaigns/edit.php:98 views/campaigns/edit.php:119
+#: views/stat/advertiser.php:33 views/stat/partner.php:33
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/WeekDayOption.php:18
+msgid "Wednesday"
+msgstr "Середа"
+
+#: views/campaigns/edit.php:98 views/campaigns/edit.php:119
+#: views/stat/advertiser.php:33 views/stat/partner.php:33
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/WeekDayOption.php:19
+msgid "Thursday"
+msgstr "Четвер"
+
+#: views/campaigns/edit.php:98 views/campaigns/edit.php:119
+#: views/stat/advertiser.php:33 views/stat/partner.php:33
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/WeekDayOption.php:20
+msgid "Friday"
+msgstr "П’ятниця"
+
+#: views/campaigns/edit.php:98 views/campaigns/edit.php:119
+#: views/stat/advertiser.php:33 views/stat/partner.php:33
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/WeekDayOption.php:21
+msgid "Saturday"
+msgstr "Субота"
+
+#: views/campaigns/edit.php:99 views/campaigns/edit.php:120
+#: views/stat/advertiser.php:34 views/stat/partner.php:34
+msgid "Sun"
+msgstr "Нед"
+
+#: views/campaigns/edit.php:99 views/campaigns/edit.php:120
+#: views/stat/advertiser.php:34 views/stat/partner.php:34
+msgid "Mon"
+msgstr "Пон"
+
+#: views/campaigns/edit.php:99 views/campaigns/edit.php:120
+#: views/stat/advertiser.php:34 views/stat/partner.php:34
+msgid "Tue"
+msgstr "Вів"
+
+#: views/campaigns/edit.php:99 views/campaigns/edit.php:120
+#: views/stat/advertiser.php:34 views/stat/partner.php:34
+msgid "Wed"
+msgstr "Сер"
+
+#: views/campaigns/edit.php:99 views/campaigns/edit.php:120
+#: views/stat/advertiser.php:34 views/stat/partner.php:34
+msgid "Thu"
+msgstr "Чет"
+
+#: views/campaigns/edit.php:99 views/campaigns/edit.php:120
+#: views/stat/advertiser.php:34 views/stat/partner.php:34
+msgid "Fri"
+msgstr "П’ят"
+
+#: views/campaigns/edit.php:99 views/campaigns/edit.php:120
+#: views/stat/advertiser.php:34 views/stat/partner.php:34
+msgid "Sat"
+msgstr "Суб"
+
+#: views/campaigns/edit.php:100 views/campaigns/edit.php:121
+#: views/stat/advertiser.php:35 views/stat/partner.php:35
+msgid "Su"
+msgstr "Нд"
+
+#: views/campaigns/edit.php:100 views/campaigns/edit.php:121
+#: views/stat/advertiser.php:35 views/stat/partner.php:35
+msgid "Mo"
+msgstr "Пн"
+
+#: views/campaigns/edit.php:100 views/campaigns/edit.php:121
+#: views/stat/advertiser.php:35 views/stat/partner.php:35
+msgid "Tu"
+msgstr "Вт"
+
+#: views/campaigns/edit.php:100 views/campaigns/edit.php:121
+#: views/stat/advertiser.php:35 views/stat/partner.php:35
+msgid "We"
+msgstr "Ср"
+
+#: views/campaigns/edit.php:100 views/campaigns/edit.php:121
+#: views/stat/advertiser.php:35 views/stat/partner.php:35
+msgid "Th"
+msgstr "Чт"
+
+#: views/campaigns/edit.php:100 views/campaigns/edit.php:121
+#: views/stat/advertiser.php:35 views/stat/partner.php:35
+msgid "Fr"
+msgstr "Пт"
+
+#: views/campaigns/edit.php:100 views/campaigns/edit.php:121
+#: views/stat/advertiser.php:35 views/stat/partner.php:35
+msgid "Sa"
+msgstr "Сб"
+
+#: views/campaigns/edit.php:101 views/campaigns/edit.php:122
+#: views/stat/advertiser.php:36 views/stat/partner.php:36
+msgid "January"
+msgstr "Січень"
+
+#: views/campaigns/edit.php:101 views/campaigns/edit.php:122
+#: views/stat/advertiser.php:36 views/stat/partner.php:36
+msgid "February"
+msgstr "Лютий"
+
+#: views/campaigns/edit.php:101 views/campaigns/edit.php:122
+#: views/stat/advertiser.php:36 views/stat/partner.php:36
+msgid "March"
+msgstr "Березень"
+
+#: views/campaigns/edit.php:101 views/campaigns/edit.php:122
+#: views/stat/advertiser.php:36 views/stat/partner.php:36
+msgid "April"
+msgstr "Квітень"
+
+#: views/campaigns/edit.php:101 views/campaigns/edit.php:102
+#: views/campaigns/edit.php:122 views/campaigns/edit.php:123
+#: views/stat/advertiser.php:36 views/stat/advertiser.php:37
+#: views/stat/partner.php:36 views/stat/partner.php:37
+msgid "May"
+msgstr "Травень"
+
+#: views/campaigns/edit.php:101 views/campaigns/edit.php:122
+#: views/stat/advertiser.php:36 views/stat/partner.php:36
+msgid "June"
+msgstr "Червень"
+
+#: views/campaigns/edit.php:101 views/campaigns/edit.php:122
+#: views/stat/advertiser.php:36 views/stat/partner.php:36
+msgid "July"
+msgstr "Липень"
+
+#: views/campaigns/edit.php:101 views/campaigns/edit.php:122
+#: views/stat/advertiser.php:36 views/stat/partner.php:36
+msgid "August"
+msgstr "Серпень"
+
+#: views/campaigns/edit.php:101 views/campaigns/edit.php:122
+#: views/stat/advertiser.php:36 views/stat/partner.php:36
+msgid "September"
+msgstr "Вересень"
+
+#: views/campaigns/edit.php:101 views/campaigns/edit.php:122
+#: views/stat/advertiser.php:36 views/stat/partner.php:36
+msgid "October"
+msgstr "Жовтень"
+
+#: views/campaigns/edit.php:101 views/campaigns/edit.php:122
+#: views/stat/advertiser.php:36 views/stat/partner.php:36
+msgid "November"
+msgstr "Листопад"
+
+#: views/campaigns/edit.php:101 views/campaigns/edit.php:122
+#: views/stat/advertiser.php:36 views/stat/partner.php:36
+msgid "December"
+msgstr "Грудень"
+
+#: views/campaigns/edit.php:102 views/campaigns/edit.php:123
+#: views/stat/advertiser.php:37 views/stat/partner.php:37
+msgid "Jan"
+msgstr "Січ"
+
+#: views/campaigns/edit.php:102 views/campaigns/edit.php:123
+#: views/stat/advertiser.php:37 views/stat/partner.php:37
+msgid "Feb"
+msgstr "Лют"
+
+#: views/campaigns/edit.php:102 views/campaigns/edit.php:123
+#: views/stat/advertiser.php:37 views/stat/partner.php:37
+msgid "Mar"
+msgstr "Бер"
+
+#: views/campaigns/edit.php:102 views/campaigns/edit.php:123
+#: views/stat/advertiser.php:37 views/stat/partner.php:37
+msgid "Apr"
+msgstr "Кві"
+
+#: views/campaigns/edit.php:102 views/campaigns/edit.php:123
+#: views/stat/advertiser.php:37 views/stat/partner.php:37
+msgid "Jun"
+msgstr "Чер"
+
+#: views/campaigns/edit.php:102 views/campaigns/edit.php:123
+#: views/stat/advertiser.php:37 views/stat/partner.php:37
+msgid "Jul"
+msgstr "Лип"
+
+#: views/campaigns/edit.php:102 views/campaigns/edit.php:123
+#: views/stat/advertiser.php:37 views/stat/partner.php:37
+msgid "Aug"
+msgstr "Сер"
+
+#: views/campaigns/edit.php:102 views/campaigns/edit.php:123
+#: views/stat/advertiser.php:37 views/stat/partner.php:37
+msgid "Sep"
+msgstr "Вер"
+
+#: views/campaigns/edit.php:102 views/campaigns/edit.php:123
+#: views/stat/advertiser.php:37 views/stat/partner.php:37
+msgid "Oct"
+msgstr "Жов"
+
+#: views/campaigns/edit.php:102 views/campaigns/edit.php:123
+#: views/stat/advertiser.php:37 views/stat/partner.php:37
+msgid "Nov"
+msgstr "Лис"
+
+#: views/campaigns/edit.php:102 views/campaigns/edit.php:123
+#: views/stat/advertiser.php:37 views/stat/partner.php:37
+msgid "Dec"
+msgstr "Гру"
+
+#: views/campaigns/listPartial.php:6
+msgid "Deactivated"
+msgstr "Деактивовано"
+
+#: views/campaigns/listPartial.php:13 views/campaigns/listPartial.php:21
+#: views/campaigns/listPartial.php:31
+msgid "Unlimited"
+msgstr "Необмежено"
+
+#: views/campaigns/listPartial.php:19 views/campaigns/listPartial.php:23
+#: views/campaigns/listPartial.php:29 views/campaigns/listPartial.php:33
+msgid "unique"
+msgstr "унікальне"
+
+#: views/campaigns/listPartial.php:24 views/campaigns/listPartial.php:34
+#: views/banners/editParameters.php:45 views/banners/editParameters.php:70
+msgid "total"
+msgstr "всього"
+
+#: views/campaigns/listPartial.php:43 views/banners/listPartial.php:17
+msgid "Active"
+msgstr "Аткивно"
+
+#: views/campaigns/listPartial.php:46 views/banners/listPartial.php:20
+msgid "Suspended"
+msgstr "Призупинено"
+
+#: views/campaigns/listPartial.php:52 views/advertisers/form.php:4
+#: views/users/edit.php:4 views/zones/edit.php:4
+#: views/banners/listPartial.php:22
+msgid "Edit"
+msgstr "Редагувати"
+
+#: views/campaigns/listPartial.php:57 views/banners/listPartial.php:23
+msgid "Delete"
+msgstr "Видалити"
+
+#: views/campaigns/list.php:14 views/advertisers/index.php:50
+#: views/stat/advertiser.php:16 views/layouts/main.php:27
+#: views/layouts/main.php:33
+msgid "Campaigns"
+msgstr "Кампанії"
+
+#: views/campaigns/list.php:23
+msgid "Add campaign"
+msgstr "Додати кампанію"
+
+#: views/campaigns/list.php:31
+msgid "Find"
+msgstr "Знайти"
+
+#: views/campaigns/list.php:42 views/advertisers/index.php:21
+#: views/users/edit.php:21 views/users/listPartial.php:48
+#: views/zones/index.php:41 views/banners/list.php:36
+#: models/AdvertiserForm.php:20 models/ZoneForm.php:18
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/VariableTemplate.php:16
+msgid "Name"
+msgstr "Назва"
+
+#: views/campaigns/list.php:45
+msgid "Impression limit"
+msgstr "Ліміт переглядів"
+
+#: views/campaigns/list.php:46
+msgid "Click limit"
+msgstr "Ліміт кліків"
+
+#: views/campaigns/list.php:47 views/stat/campaignBanners.php:92
+#: views/stat/campaigns.php:94
+msgid "Cost"
+msgstr "Вартість"
+
+#: views/advertisers/index.php:10
+msgid "Add Advertiser"
+msgstr "Додати рекламодавця"
+
+#: views/advertisers/index.php:22 views/stat/advertisers.php:21
+#: models/AdvertiserForm.php:23
+msgid "Address"
+msgstr "Адресса"
+
+#: views/advertisers/index.php:23 views/users/edit.php:26
+#: views/users/listPartial.php:56 views/stat/advertisers.php:15
+#: models/AdvertiserForm.php:21
+msgid "Phone"
+msgstr "Телефон"
+
+#: views/advertisers/index.php:24 views/users/edit.php:31
+#: views/users/login.php:6 views/users/listPartial.php:52
+#: views/stat/advertisers.php:27 models/AdvertiserForm.php:22
+#: models/LoginForm.php:33
+msgid "E-mail"
+msgstr "Електронна пошта"
+
+#: views/advertisers/index.php:54 views/users/edit.php:3
+#: views/users/list.php:3 views/users/list.php:6 views/layouts/main.php:57
+msgid "Users"
+msgstr "Користувачі"
+
+#: views/users/edit.php:36 views/users/login.php:15 models/LoginForm.php:34
+msgid "Password"
+msgstr "Пароль"
+
+#: views/users/login.php:24
+msgid "Remember me?"
+msgstr "Запам'ятати мене"
+
+#: views/users/login.php:29
+msgid "Sign in"
+msgstr "Ввійти"
+
+#: views/users/listPartial.php:4
+msgid "Add Manager"
+msgstr "Додати менеджера"
+
+#: views/users/listPartial.php:10
+msgid "Add User"
+msgstr "Додати користувача"
+
+#: views/users/listPartial.php:25
+msgid "Choose..."
+msgstr "Вибрати..."
+
+#: views/users/list.php:11
+msgid "Managers"
+msgstr "Менеджери"
+
+#: views/users/list.php:13 views/stat/index.php:9
+msgid "Partners"
+msgstr "Партнери"
+
+#: views/stat/campaignBanners.php:4 views/stat/advertiser.php:3
+#: views/stat/index.php:3 views/stat/partner.php:3 views/stat/partner.php:14
+#: views/stat/campaigns.php:6 views/layouts/main.php:40
+#: views/layouts/main.php:45 views/layouts/main.php:50
+#: controllers/StatController.php:127
+msgid "Statistics"
+msgstr "Статистика"
+
+#: views/stat/campaignBanners.php:9
+msgid "Banner statistics"
+msgstr "Статистика баннера"
+
+#: views/stat/campaignBanners.php:17
+msgid "No banners"
+msgstr "Не знайдено банерів"
+
+#: views/stat/campaignBanners.php:22 views/zones/banners.php:26
+msgid "Banner"
+msgstr "Баннер"
+
+#: views/stat/campaignBanners.php:23 views/stat/campaigns.php:25
+msgid "Total"
+msgstr "Всього"
+
+#: views/stat/campaignBanners.php:28 views/stat/partnerEvents.php:47
+#: views/stat/campaigns.php:30
+#: models/Report/EventReport/CampaignForPeriodReport.php:40
+#: widgets/CampaignByHourChart.php:80 widgets/views/campaignByHourChart.php:13
+#: widgets/views/campaignEventChart.php:22
+msgid "Impressions"
+msgstr "Перегляди"
+
+#: views/stat/campaignBanners.php:44 views/stat/campaigns.php:46
+#: widgets/CampaignByHourChart.php:80
+msgid "Unique Impressions"
+msgstr "Унікальних переглядів"
+
+#: views/stat/campaignBanners.php:60 views/stat/campaigns.php:62
+#: models/Report/EventReport/CampaignForPeriodReport.php:42
+#: widgets/CampaignByHourChart.php:80 widgets/views/campaignByHourChart.php:22
+#: widgets/views/campaignEventChart.php:28
+msgid "Clicks"
+msgstr "Кліки"
+
+#: views/stat/campaignBanners.php:76 views/stat/campaigns.php:78
+#: widgets/CampaignByHourChart.php:80
+msgid "Unique Clicks"
+msgstr "Унікальних кліків"
+
+#: views/stat/campaignBanners.php:102 views/stat/campaigns.php:110
+#: widgets/views/campaignByHourChart.php:32
+msgid "CTR"
+msgstr ""
+
+#: views/stat/advertiser.php:14 views/stat/partner.php:16
+msgid "Events"
+msgstr "Події"
+
+#: views/stat/advertisers.php:9 views/zones/banners.php:16
+msgid "Advertiser"
+msgstr "Рекламодавець"
+
+#: views/stat/partnerEvents.php:6 widgets/views/campaignEventChart.php:6
+msgid "Hours"
+msgstr "Години"
+
+#: views/stat/partnerEvents.php:9 widgets/views/campaignEventChart.php:9
+msgid "Days"
+msgstr "Дні"
+
+#: views/stat/partnerEvents.php:12 widgets/views/campaignEventChart.php:12
+msgid "Weeks"
+msgstr "Тижні"
+
+#: views/stat/partnerEvents.php:15 widgets/views/campaignEventChart.php:15
+msgid "Months"
+msgstr "Місяці"
+
+#: views/stat/partnerEvents.php:38 widgets/views/campaignByHourChart.php:5
+msgid "No data"
+msgstr "Нема даних"
+
+#: views/stat/partnerEvents.php:42
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/DateOption.php:11
+#: widgets/CampaignByHourChart.php:80
+msgid "Date"
+msgstr "Дата"
+
+#: views/stat/partners.php:8
+msgid "Partner"
+msgstr "Партнер"
+
+#: views/stat/partners.php:14
+msgid "Code"
+msgstr "Код"
+
+#: views/stat/campaigns.php:10
+msgid "Campaign statistics"
+msgstr "Статистика кампанії"
+
+#: views/stat/campaigns.php:17
+msgid "No campaigns"
+msgstr "Не знайдено кампаній"
+
+#: views/stat/campaigns.php:22 views/zones/banners.php:21
+msgid "Campaign"
+msgstr "Кампанія"
+
+#: views/layouts/main.php:21 views/zones/edit.php:3 views/zones/banners.php:4
+#: views/zones/index.php:4 controllers/ZonesController.php:18
+msgid "Zones"
+msgstr "Зони"
+
+#: views/layouts/main.php:69
+msgid "Sing in"
+msgstr "Вхід"
+
+#: views/layouts/main.php:72
+msgid "Sign out"
+msgstr "Вийти"
+
+#: views/zones/edit.php:7
+msgid "Zone"
+msgstr "Зона"
+
+#: views/zones/banners.php:6 views/zones/index.php:81 views/banners/edit.php:9
+#: views/banners/list.php:8 controllers/StatController.php:253
+msgid "Banners"
+msgstr "Баннери"
+
+#: views/zones/index.php:12
+msgid "Add Zone"
+msgstr "Додати зону"
+
+#: views/zones/index.php:45 models/ZoneForm.php:19
+msgid "Type"
+msgstr "Тип"
+
+#: views/zones/index.php:64
+msgid "Zone code"
+msgstr "Код зони"
+
+#: views/zones/index.php:73
+msgid "Drop VAST cache"
+msgstr "Очистити кеш VAST"
+
+#: views/banners/edit.php:5 views/banners/list.php:5
+#, php-format
+msgid "Banners of \"%s\""
+msgstr "Баннер  \"%s\""
+
+#: views/banners/edit.php:6
+msgid "New banner"
+msgstr "Новий баннер"
+
+#: views/banners/edit.php:15
+msgid "Parameters"
+msgstr "Параметри"
+
+#: views/banners/edit.php:18
+msgid "Delivery options"
+msgstr "Опції тергетингу"
+
+#: views/banners/edit.php:21
+msgid "Linked Zones"
+msgstr "Зони"
+
+#: views/banners/editParametersImageBanner.php:2
+msgid "Image URL"
+msgstr "URL ссилка зображення"
+
+#: views/banners/editParametersImageBanner.php:7
+#: views/banners/editParametersVideoBanner.php:22
+msgid "Upload"
+msgstr "Завантажити"
+
+#: views/banners/editParametersCreepingLineBanner.php:2
+#: views/banners/editParametersTextPopupBanner.php:2
+msgid "Text"
+msgstr "Текст"
+
+#: views/banners/editParametersCreepingLineBanner.php:5
+#: views/banners/editParametersCreepingLineBanner.php:10
+#: views/banners/editParametersTextPopupBanner.php:5
+#: views/banners/editParametersTextPopupBanner.php:10
+msgid "Length"
+msgstr "Довжина"
+
+#: views/banners/editParameters.php:12
+msgid "Banner type"
+msgstr "Тип баннера"
+
+#: views/banners/editParameters.php:18
+msgid "Limits reached"
+msgstr "Ліміт досягнуто"
+
+#: views/banners/editParameters.php:21
+msgid "Campaign deactivated"
+msgstr "Кампанія деактивована"
+
+#: views/banners/editParameters.php:28
+msgid "Banner name"
+msgstr "Наза баннера"
+
+#: views/banners/editParameters.php:35 views/banners/addmediafileform.php:12
+#: views/banners/editParametersVideoBanner.php:32 views/banners/list.php:37
+msgid "URL"
+msgstr "URL ссилка"
+
+#: views/banners/editParameters.php:42
+msgid "Impressions Limits"
+msgstr "Ліміт переглядів"
+
+#: views/banners/editParameters.php:52 views/banners/editParameters.php:77
+msgid "day"
+msgstr "день"
+
+#: views/banners/editParameters.php:59 views/banners/editParameters.php:84
+msgid "hour"
+msgstr "година"
+
+#: views/banners/editParameters.php:67
+msgid "Clicks Limits"
+msgstr "Ліміт кліків"
+
+#: views/banners/addmediafileform.php:8
+#: views/banners/editParametersVideoBanner.php:16
+msgid "New media file"
+msgstr "Новий медіа файл"
+
+#: views/banners/addmediafileform.php:13
+msgid "Upload file or type url directly"
+msgstr "Завантажте файл або вкажіть URL"
+
+#: views/banners/addmediafileform.php:16
+#: views/banners/editParametersVideoBanner.php:33
+msgid "Delivery"
+msgstr "Опції тергетингу"
+
+#: views/banners/addmediafileform.php:18
+msgid "Progressive delivery"
+msgstr "Файл"
+
+#: views/banners/addmediafileform.php:19
+msgid "Streaming delivery"
+msgstr "Потік"
+
+#: views/banners/editParametersVideoBanner.php:2
+msgid "Skip Offset"
+msgstr "Час пропуску реклами"
+
+#: views/banners/editParametersVideoBanner.php:6
+msgid "seconds"
+msgstr "секунд"
+
+#: views/banners/editParametersVideoBanner.php:12
+msgid "Media files"
+msgstr "Медіа файли"
+
+#: views/banners/editParametersVideoBanner.php:18
+msgid "Add URL"
+msgstr "Додати адресу"
+
+#: views/banners/editParametersVideoBanner.php:27
+msgid "Maximum file size"
+msgstr "Максимальний розмір файлу"
+
+#: views/banners/editParametersVideoBanner.php:34
+msgid "Size"
+msgstr "Розмір"
+
+#: views/banners/editParametersVideoBanner.php:35
+msgid "Mime"
+msgstr "Тип"
+
+#: views/banners/editParametersVideoBanner.php:46
+msgid "Tracking Events"
+msgstr "Події"
+
+#: views/banners/editParametersVideoBanner.php:58
+msgid "Add event"
+msgstr "Додати подію"
+
+#: views/banners/editParametersVideoBanner.php:83
+msgid "You need to attach media file"
+msgstr "Вам необхідно додати хоча б один медіа файл"
+
+#: views/banners/editLinkedZones.php:20
+msgid "All"
+msgstr "Все"
+
+#: views/banners/editDeliveryOptions.php:18
+msgid "Add"
+msgstr "Додати"
+
+#: views/banners/list.php:16
+msgid "Add banner"
+msgstr "Додати баннер"
+
+#: views/error/error.php:6
+msgid ""
+"Error occured while handling your request. Administration noticed about this "
+"and already trying to search a resolution"
+msgstr ""
+"Помилка під час виконання вашого запиту. Адміністрація повідомлена про "
+"проблему і вже намагається її вирішити"
+
+#: views/error/error404.php:2 controllers/ErrorController.php:22
+msgid "Page not found"
+msgstr "Сторінка не знайдена"
+
+#: components/Response.php:65
+msgid "Error occured"
+msgstr "Сталася помилка"
+
+#: components/Response.php:82 controllers/ZonesController.php:329
+#: controllers/ZonesController.php:357
+msgid "Operation successful"
+msgstr "Операція пройшла успішно"
+
+#: controllers/ErrorController.php:32
+msgid "Error"
+msgstr "Помилка"
+
+#: controllers/StatController.php:249
+msgid "Event chart"
+msgstr "Графік подій"
+
+#: controllers/StatController.php:257
+msgid "Timing"
+msgstr "Розподіл по часу доби"
+
+#: controllers/CampaignsController.php:234
+#: controllers/BannersController.php:197 controllers/BannersController.php:420
+#: controllers/BannersController.php:534 controllers/BannersController.php:644
+#: controllers/UsersController.php:235
+msgid "Saved successfully"
+msgstr "Успішно збережено"
+
+#: controllers/BannersController.php:12 models/ZoneForm.php:27
+msgid "Creeping Line"
+msgstr "Бігучий ряд"
+
+#: controllers/BannersController.php:16 models/ZoneForm.php:31
+msgid "Text Popup"
+msgstr "Вспливаючий текст"
+
+#: controllers/BannersController.php:20 models/ZoneForm.php:35
+msgid "Image"
+msgstr "Зображення"
+
+#: controllers/BannersController.php:24 models/ZoneForm.php:39
+msgid "Video"
+msgstr "Відео"
+
+#: controllers/BannersController.php:396
+msgid "URL not specified"
+msgstr "URL не вказано"
+
+#: models/AdvertiserForm.php:12 models/ZoneForm.php:11
+#: models/MongoAdvertDb/Campaigns/Campaign.php:88
+#: models/MongoAdvertDb/Advertisers/Advertiser.php:50
+#: models/MongoAdvertDb/Zones/Zone.php:20
+#: models/MongoAdvertDb/Partners/Partner.php:23
+#: models/MongoAdvertDb/Banners/BannerForm.php:55
+#: models/MongoAdvertDb/Banners/Banner.php:38
+#: models/MongoAdvertDb/Banners/BannerForm/CreepingLineBannerForm.php:15
+#: models/MongoAdvertDb/Banners/BannerForm/TextPopupBannerForm.php:15
+#: models/MongoAdvertDb/Banners/BannerForm/ImageBannerForm.php:15
+#: models/MongoAdvertDb/Users/User.php:63
+#: models/MongoAdvertDb/Users/User.php:64
+msgid "This field required"
+msgstr "Необхідно заповнити поле"
+
+#: models/AdvertiserForm.php:13 models/MongoAdvertDb/Users/User.php:65
+msgid "Wrong E-mail"
+msgstr "Невірна електронна пошта"
+
+#: models/ZoneForm.php:20
+msgid "Status"
+msgstr "Статус"
+
+#: models/LogForm.php:36
+msgid "from"
+msgstr "з"
+
+#: models/LogForm.php:37
+msgid "to"
+msgstr "по"
+
+#: models/LoginForm.php:24
+msgid "Please enter {attribute}."
+msgstr "Будь-ласка вкажіть {attribute}."
+
+#: models/LoginForm.php:43
+msgid "Incorrect E-mail or Password."
+msgstr "Невірний e-mail чи пароль"
+
+#: models/MongoAdvertDb/Campaigns/Campaign.php:89
+#: models/MongoAdvertDb/Advertisers/Advertiser.php:52
+msgid "Field must be numeric"
+msgstr "Необхідно числове значення"
+
+#: models/MongoAdvertDb/Campaigns/Campaign.php:90
+#: models/MongoAdvertDb/Campaigns/Campaign.php:91
+#: models/MongoAdvertDb/Zones/Zone.php:21
+#: models/MongoAdvertDb/Banners/Banner.php:39
+msgid "Wrong value specified"
+msgstr "Невірно вказано значення"
+
+#: models/MongoAdvertDb/Campaigns/Campaign.php:234
+#: models/MongoAdvertDb/Campaigns/Campaign.php:267
+msgid "Wrong date specified"
+msgstr "Невірно вказано дату"
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/SingleValueOption.php:16
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/TimeOption.php:16
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/DateOption.php:16
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/RefOption.php:23
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/VariableOption.php:20
+msgid "equals"
+msgstr "дорівнює"
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/SingleValueOption.php:17
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/TimeOption.php:17
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/DateOption.php:17
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/RefOption.php:24
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/VariableOption.php:21
+msgid "not equals"
+msgstr "не дорівнює"
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/SingleValueOption.php:18
+msgid "contains"
+msgstr "містить"
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/SingleValueOption.php:19
+msgid "does not contains"
+msgstr "не містить"
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/SingleValueOption.php:20
+msgid "regex match"
+msgstr "відповіда шаблону"
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/SingleValueOption.php:21
+msgid "regex does not match"
+msgstr "не відповіда шаблону"
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/MultiValueOption.php:12
+msgid "any of"
+msgstr "будь-який з"
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/MultiValueOption.php:13
+msgid "none of"
+msgstr "жоден з"
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:11
+msgid "Operating System"
+msgstr "Операційна система"
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:16
+msgid "Any Windows"
+msgstr "Будь який Windows"
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:17
+msgid "Windows XP"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:18
+msgid "Windows 7"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:19
+msgid "Windows 8"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:21
+msgid "Windows Phone"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:23
+msgid "Linux"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:25
+msgid "Ubuntu"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:27
+msgid "FreeBSD"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:29
+msgid "Any Android"
+msgstr "Будь який  Android"
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:30
+msgid "Android Phone"
+msgstr "Телефон  Android"
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:31
+msgid "Android Tablet"
+msgstr "Планшет  Android"
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:32
+msgid "Android 2"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:33
+msgid "Android 3"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:34
+msgid "Android 4"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:36
+msgid "Any Apple OS X"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:37
+msgid "Apple OS X 10.7 Lion"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:38
+msgid "Apple OS X 10.8 Mountain Lion"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:39
+msgid "Apple OS X 10.9 Mavericks"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:41
+msgid "Any Apple iOS"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:42
+msgid "Apple iOS 1"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:43
+msgid "Apple iOS 2"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:44
+msgid "Apple iOS 3"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:45
+msgid "Apple iOS 4"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:46
+msgid "Apple iOS 5"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:47
+msgid "Apple iOS 6"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:48
+msgid "Apple iOS 7"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:50
+msgid "Apple iPhone"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:51
+msgid "Apple iPhone 1"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:52
+msgid "Apple iPhone 2"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:53
+msgid "Apple iPhone 3"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:54
+msgid "Apple iPhone 4"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:55
+msgid "Apple iPhone 5"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:57
+msgid "Apple iPad"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:58
+msgid "Apple iPad 1"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:59
+msgid "Apple iPad 2"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:60
+msgid "Apple iPad 3"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/OperatingSystemOption.php:61
+msgid "Apple iPad 4"
+msgstr ""
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/CountryOption.php:11
+msgid "Country"
+msgstr "Країна"
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/CountryOption.php:16
+msgid "Ukraine"
+msgstr "Україна"
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/CountryOption.php:17
+msgid "Russia"
+msgstr "Росія"
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/CountryOption.php:18
+msgid "Israel"
+msgstr "Ізраїль"
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/RefOption.php:13
+msgid "Referral"
+msgstr "Реферал"
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/VariableOption.php:11
+msgid "Variable"
+msgstr "Змінна"
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/WeekDayOption.php:11
+msgid "Week day"
+msgstr "День тижня"
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/ClientOption.php:11
+msgid "Client"
+msgstr "Клієнт"
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/ClientOption.php:17
+msgid "Chrome"
+msgstr "Chrome"
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/ClientOption.php:18
+msgid "Firefox"
+msgstr "Firefox"
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/ClientOption.php:19
+msgid "Opera"
+msgstr "Opera"
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/ClientOption.php:20
+msgid "IE"
+msgstr "IE"
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/VariableTemplate.php:18
+msgid "Value"
+msgstr "Значення"
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/LanguageOption.php:11
+msgid "Language"
+msgstr "Мова"
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/LanguageOption.php:16
+msgid "English"
+msgstr "Англійська"
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/LanguageOption.php:17
+msgid "Russian"
+msgstr "Російська"
+
+#: models/MongoAdvertDb/Banners/DeliveryOptions/Option/LanguageOption.php:18
+msgid "Ukrainian"
+msgstr "Українська"
+
+#: models/MongoAdvertDb/Users/User.php:39
+#, php-format
+msgid "Your profile at %s was changed"
+msgstr "Ваш профіль на сайті %s було змінено"
+
+#: models/MongoAdvertDb/Users/User.php:48
+msgid "Registration"
+msgstr "Реєстрація"
+
+#: models/MongoAdvertDb/Users/User.php:66
+msgid "User with specified E-mail already registered"
+msgstr "Користувач з вказаною електронною адресою вже зареєстрований"
+
+#: models/Report/EventReport/CampaignForPeriodReport.php:41
+#: widgets/views/campaignByHourChart.php:17
+#: widgets/views/campaignEventChart.php:25
+msgid "Unique impressions"
+msgstr "Унікальні перегляди"
+
+#: models/Report/EventReport/CampaignForPeriodReport.php:43
+#: widgets/views/campaignByHourChart.php:27
+#: widgets/views/campaignEventChart.php:31
+msgid "Unique clicks"
+msgstr "Унікальні кліки"
+
+#: widgets/views/campaignByHourChart.php:9
+msgid "Hour"
+msgstr "Години"
+
+#: widgets/views/campaignEventChart.php:46
+msgid "Campaign Events"
+msgstr "Події кампанії"
+
+#~ msgid "Film Genre"
+#~ msgstr "Жанр фільму"
+
+#~ msgid "Choose category"
+#~ msgstr "Оберіть категорію"
+
+#~ msgid "Error fetching channel categories"
+#~ msgstr "Помилка отримання списку каналів"
+
+#~ msgid "Film"
+#~ msgstr "Фільм"
+
+#~ msgid "Channel"
+#~ msgstr "Канал"
+
+#~ msgid "Channel Category"
+#~ msgstr "Категорія каналу"
+
+#~ msgid "Choose genre"
+#~ msgstr "Оберіть жанр"

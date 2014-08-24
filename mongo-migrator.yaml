@@ -1,0 +1,21 @@
+default_environment: development
+
+path:
+    migrations: migrations
+    
+environments:
+    development:
+        dsn: mongodb://localhost
+        
+        default_database: advert
+        
+        log_database: advert
+        log_collection: migrations
+    
+    production:
+        dsn: mongodb://localhost
+        
+        default_database: advert
+        
+        log_database: advert
+        log_collection: migrations

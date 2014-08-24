@@ -1,0 +1,12 @@
+vendor/*
+nbproject/*
+composer.lock
+public/assets/*
+application/runtime/*
+public/ad/*
+public/static/*
+.idea/*
+application/config/development.php
+application/config/nginx/production.conf
+application/config/crontab/production.conf.sample
+public/.htaccess
