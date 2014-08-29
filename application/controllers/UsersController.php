@@ -114,7 +114,7 @@ class UsersController extends Controller
         /**
          * Render
          */        
-        $response['users'] = new MongoDataProvider($userSearch, array(
+        $response['users'] = new \Sokil\Mongo\Yii\DataProvider($userSearch, array(
             'attributes' => array('name', 'email'),
         ));
 

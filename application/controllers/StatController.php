@@ -24,7 +24,7 @@ class StatController extends Controller
         $partners = Yii::app()->mongo->getCollection('partners')
             ->findAsArray();
         
-        $dataProvider = new MongoDataProvider($partners, array(
+        $dataProvider = new \Sokil\Mongo\Yii\DataProvider($partners, array(
             'attributes'    => ['name', 'ref'],
             'pagination'    => array('pageSize' => 30)
         ));
@@ -139,7 +139,7 @@ class StatController extends Controller
             ->findAsArray()
             ->notDeleted();
 
-        $dataProvider = new MongoDataProvider($advertisers, array(
+        $dataProvider = new \Sokil\Mongo\Yii\DataProvider($advertisers, array(
             'attributes' => array('name', 'phone', 'address', 'email'),
             'filter'     => $filter->attributes,
             'pagination' => array('pageSize' => 30)

@@ -26,7 +26,7 @@ class ZonesController extends Controller
             ->findAsArray()
             ->notDeleted();
 
-        $dataProvider = new MongoDataProvider($zones, array(
+        $dataProvider = new \Sokil\Mongo\Yii\DataProvider($zones, array(
             'attributes' => array('name', 'type'),
             'filter' => $filter->attributes,
             'pagination' => array('pageSize' => 30)

@@ -37,7 +37,7 @@ return CMap::mergeArray(
             'log'   => array(
                 'routes' => array(
                     array(
-                        'class'     => 'MongoLogRoute',
+                        'class'     => '\Sokil\Mongo\Yii\LogRoute',
                         'levels'    => 'error, warning',
                     ),
                 ),

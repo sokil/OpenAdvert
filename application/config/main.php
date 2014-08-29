@@ -86,7 +86,7 @@ return array(
             'class' => 'CLogRouter',
             'routes' => array(
                 array(
-                    'class' => 'MongoLogRoute',
+                    'class' => '\Sokil\Mongo\Yii\LogRoute',
                     'levels' => 'error, warning',
                     'filter' => array(
                         'class' => 'LogCategoryFilter',
@@ -96,7 +96,7 @@ return array(
                     ),
                 ),
                 array(
-                    'class' => 'MongoLogRoute',
+                    'class' => '\Sokil\Mongo\Yii\LogRoute',
                     'categories' => 'mongo',
                 ),
             ),
@@ -105,7 +105,7 @@ return array(
             'class' => 'ReportFactory',
         ),
         'mongo' => array(
-            'class' => 'MongoAdapter',
+            'class' => '\Sokil\Mongo\Yii\ClientAdapter',
             'dsn' => 'mongodb://127.0.0.1',
             'options' => array(
                 'connect' => true,

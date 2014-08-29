@@ -9,7 +9,7 @@ class LogController extends Controller
         
         $formModel = new LogForm();
         
-        $dataProvider = new MongoDataProvider($formModel->getDataSource(), array(
+        $dataProvider = new \Sokil\Mongo\Yii\DataProvider($formModel->getDataSource(), array(
             'attributes' => array('level', 'category', 'logtime'),
             'pagination'    => array('pageSize' => 20)
         ));
