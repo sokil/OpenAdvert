@@ -86,11 +86,13 @@ return array(
             'class' => 'CLogRouter',
             'routes' => array(
                 array(
-                    'class' => '\Sokil\Mongo\Yii\LogRoute',
-                    'levels' => 'error, warning',
-                    'filter' => array(
-                        'class' => 'LogCategoryFilter',
-                        'categories' => array(
+                    'class'             => '\Sokil\Mongo\Yii\LogRoute',
+                    'collectionName'    => 'log',
+                    'serviceName'       => 'mongo',
+                    'levels'            => 'error, warning',
+                    'filter'            => array(
+                        'class'         => 'LogCategoryFilter',
+                        'categories'    => array(
                             'exception.CHttpException.404',
                         )
                     ),

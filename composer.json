@@ -11,7 +11,7 @@
     "require": {
         "yiisoft/yii"               : "1.1.15",
         "sokil/php-vast"            : "0.*",
-        "sokil/php-mongo-yii"       : "0.1.4",
+        "sokil/php-mongo-yii"       : "0.1.5",
         "sokil/php-mongo-migrator"  : "0.1.2",
         "sokil/php-upload"          : "0.5.3",
         "php-ffmpeg/php-ffmpeg"     : "dev-master",

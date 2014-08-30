@@ -28,6 +28,5 @@ class LogController extends Controller
             'logDoc' => $logDoc,
         ));
     }
-
 }
 
