@@ -49,10 +49,10 @@ class LogForm extends CFormModel
             }
             switch ($name) {
                 case 'dateFrom':
-                    $log->fromDate($this->$name);
+                    $log->whereGreaterOrEqual('logtime', new \MongoDate(strtotime($this->$name . ' 00:00:00')));
                     break;
                 case 'dateTo':
-                    $log->toDate($this->$name);
+                    $this->whereLessOrEqual('logtime', new \MongoDate(strtotime($this->$name . ' 23:59:59')));
                     break;
                 default:
                     $log->whereLike($name, $this->$name);

@@ -128,7 +128,6 @@ return array(
                     'track.event' => '\MongoAdvertDb\Track\\Event',
                     'track.click' => '\MongoAdvertDb\Track\\Click',
                     'track.impression' => '\MongoAdvertDb\Track\\Impression',
-                    'log' => '\MongoAdvertDb\Log',
                     'apikeys' => '\MongoAdvertDb\Apikeys',
                 )
             ),
