@@ -18,4 +18,5 @@ require_once APPLICATION_PATH . '/../vendor/autoload.php';
 
 // start app
 require_once($yii);
-Yii::createWebApplication($config)->run();
+require_once APPLICATION_PATH . '/components/Application.php';
+Yii::createApplication('Application', $config)->run();

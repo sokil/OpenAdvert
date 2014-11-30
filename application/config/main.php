@@ -177,8 +177,16 @@ return array(
         'bannerStorageDir' => '/static',
         // path to ffprobe
         'ffprobe_path' => '/usr/bin/ffprobe',
+        // XHProof cookie key. Must be overrided in production config file, if
+        // xhproof required
+        'xhproofCookieKey' => null
     ),
     'OnBeginRequest' => function() {
+
+        // xhproof
+        if(isset($_COOKIE[Yii::app()->params['xhprofCookieKey']])) {
+            xhprof_enable(XHPROF_FLAGS_CPU + XHPROF_FLAGS_MEMORY);
+        }
 
         /* @var $translate Translate */
         $translate = Yii::app()->translate;
@@ -197,4 +205,23 @@ return array(
         // Init localization
         Yii::app()->translate->initGettext('system', Yii::app()->basePath . '/messages/');
     },
+    'OnEndRequest' => function() {
+        // xhproof
+        if(isset($_COOKIE[Yii::app()->params['xhprofCookieKey']])) {
+
+            include_once __DIR__ . '/../extensions/xhprof/xhprof_lib/utils/xhprof_lib.php';
+            include_once __DIR__ . '/../extensions/xhprof/xhprof_lib/utils/xhprof_runs.php';
+
+            $xhprof_runs = new XHProfRuns_Default('/tmp');
+            $xhprofData = xhprof_disable();
+
+            $namespace = 'std';
+            $runId = $xhprof_runs->save_run($xhprofData, $namespace);
+            echo sprintf(
+                '<a href="/xhprof_html/index.php?run=%s&source=%s">Xhprof</a>',
+                $runId,
+                $namespace
+            );
+        }
+    }
 );
