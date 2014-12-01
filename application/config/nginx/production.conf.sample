@@ -34,9 +34,13 @@ server
         fastcgi_buffers 256 16k;
     }
 
-    location /xhprof
-    {
-        root /var/www/ad/application/extensions/xhprof/xhprof_html;
-        index index.php;
+    location ^~ /xhprof_html/ {
+        root /var/www/ad/application/extensions/xhprof/;
+        include /etc/nginx/fastcgi_params;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_pass 127.0.0.1:9000;
+
+        location ~ ^.*\.(css|js|gif)$ {}
     }
 }
