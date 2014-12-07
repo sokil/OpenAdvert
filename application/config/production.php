@@ -13,34 +13,26 @@ return CMap::mergeArray(
             'clientScript' => array(
                 'scriptMap' => array(
                     'form.js'                   => '/js/main.js',
-                    
+
                     'bootstrap.min.js'          => '/js/main.js',
                     'bootstrap.min.css'         => '/css/main.css',
                     'ui.css'                    => '/css/main.css',
 
                     'jquery.pickmeup.min.js'    => '/js/main.js',
                     'pickmeup.min.css'          => '/css/main.css',
-                    
+
                     'common.js'                 => '/js/main.js',
-                    
+
                     'bannerEditor.js'           => '/js/main.js',
                     'videoBannerEditor.js'      => '/js/main.js',
-                    
+
                     'modal.js'                  => '/js/main.js',
-                    
+
                     'stat.js'                   => '/js/stat.js',
                 )
             ),
             'mailer' => array(
                 'debug' => 0,
-            ),
-            'log'   => array(
-                'routes' => array(
-                    array(
-                        'class'     => '\Sokil\Mongo\Yii\LogRoute',
-                        'levels'    => 'error, warning',
-                    ),
-                ),
             ),
             'mongo' => array(
                 // disable logger on production

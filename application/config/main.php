@@ -85,6 +85,7 @@ return array(
         'log' => array(
             'class' => 'CLogRouter',
             'routes' => array(
+                // log errors and warnings
                 array(
                     'class'             => '\Sokil\Mongo\Yii\LogRoute',
                     'collectionName'    => 'log',
@@ -97,9 +98,12 @@ return array(
                         )
                     ),
                 ),
+                // write PHPMongo debug messages to log
                 array(
                     'class' => '\Sokil\Mongo\Yii\LogRoute',
-                    'categories' => 'mongo',
+                    'collectionName' => 'log',
+                    'serviceName' => 'mongo',
+                    'categories' => 'PHPMongoLogger',
                 ),
             ),
         ),
@@ -131,11 +135,12 @@ return array(
                     'apikeys' => '\MongoAdvertDb\Apikeys',
                 )
             ),
-            'logger' => 'psrMongoLog',
+            'logger' => 'psrPHPMongoLogger',
         ),
-        'psrMongoLog' => array(
+        // this logger used as php-mongo logger for debuggings
+        'psrPHPMongoLogger' => array(
             'class' => 'PsrLogAdapter',
-            'category' => 'mongo',
+            'category' => 'PHPMongoLogger',
         ),
         'translate' => array(
             'class' => 'Translate',
