@@ -1,4 +1,5 @@
 vendor/*
+node_modules/*
 nbproject/*
 composer.lock
 public/assets/*
