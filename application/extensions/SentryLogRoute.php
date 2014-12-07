@@ -24,18 +24,13 @@ class SentryLogRoute extends \CLogRoute
     protected function processLogs($logs)
     {
         foreach ($logs as $log) {
-            $this->client->captureMessage(
-                $log[0],
-                array(
-                    'logtime'       => $log[3],
-                    'requestUri'    => isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : null,
-                    'userAgent'     => isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : null,
+            $this->client->capture(array(
+                'message' => $log[0],
+                'level' => $log[1],
+                'tags' => array(
+                    $log[2], // category
                 ),
-                array(
-                    'level'         => $log[1],
-                    'category'      => $log[2],
-                )
-            );
+            ));
         }
     }
 
