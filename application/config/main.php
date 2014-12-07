@@ -223,7 +223,7 @@ return array(
             $namespace = 'std';
             $runId = $xhprof_runs->save_run($xhprofData, $namespace);
             echo sprintf(
-                '<a href="/xhprof_html/index.php?run=%s&source=%s">Xhprof</a>',
+                '<div class="text-center"><a href="/xhprof_html/index.php?run=%s&source=%s" class="btn btn-success"><span class="glyphicon glyphicon-dashboard"></span> Xhprof</a></div>',
                 $runId,
                 $namespace
             );
