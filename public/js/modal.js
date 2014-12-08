@@ -1,20 +1,20 @@
 (function() {
-    window.modal = function(a, params) {
+    window.modal = function(a, customParams) {
         
         var $a = $(a),
             id = $a.data('modal-id'),
             params = $.extend({}, {
                 replaceEntireModal: true
-            }, params);
+            }, customParams),
+            $modal;
         
-        // create modal
         if(!id) {
             // create modal id
             id = 'modal-' + Math.round(Math.random() * (new Date()).getTime());
             $a.attr('data-target', '#' + id);
             
             // create modal window
-            var $modal = $('<div class="modal fade" role="dialog" aria-hidden="true" />')
+            $modal = $('<div class="modal fade" role="dialog" aria-hidden="true" />')
                 .attr('id', id)
                 .attr('aria-labelledby', id)
                 .appendTo(document.body);
@@ -53,11 +53,9 @@
                     }
                 }
             }
-        }
-        
-        // already created modal
-        else {
-            var $modal = $('#' + id);
+        } else {
+            // already created modal
+            $modal = $('#' + id);
         }
 
         // launch modal

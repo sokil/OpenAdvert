@@ -15,6 +15,7 @@ module.exports = function (grunt) {
                 'public/js/stat.js'
             ],
             options: {
+                loopfunc: true,
                 globals: {
                     jQuery: true,
                     console: true,

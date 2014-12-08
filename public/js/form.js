@@ -55,58 +55,59 @@
             // send message
             $(self.options.statusSelector, $frm).html('&nbsp;').addClass(self.options.preloaderCssClass);
             
-            $.post($frm.attr('action'), $frm.serialize(), function(response) 
-            {
+            $.post($frm.attr('action'), $frm.serialize(), function(response) {
                 $(self.options.statusSelector, $frm).removeClass(self.options.preloaderCssClass);
                 
                 if(1 === response.error) {
                     self.setStatus(response.errorMessage, null, 'alert alert-danger');
 
+
                     // maybe invalidated
+                    if(!response.invalidated) {
+                        return;
+                    }
+                    
                     var $error, errors;
+                    
+                    for(var field in response.invalidated) {
+                        errors  = response.invalidated[field];
 
-                    if(response.invalidated) {
-                        for(var field in response.invalidated)
-                        {
-                            errors  = response.invalidated[field];
-                            
-                            var $input = $('*[name=' + self.options.modelToFormFieldName(field) + ']', $frm),
-                                $error = [];
+                        var $input = $('*[name=' + self.options.modelToFormFieldName(field) + ']', $frm);
+                        $error = [];
 
-                            for(var rule in errors) {
-                                $error.push(errors[rule]);
-                            }
+                        for(var rule in errors) {
+                            $error.push(errors[rule]);
+                        }
 
-                            $input.closest('.form-group').addClass('has-error');
-                            
-                            if(self.options.showErrorDescription) {
-                                
+                        $input.closest('.form-group').addClass('has-error');
+
+                        if(self.options.showErrorDescription) {
+
+                            if(self.options.errorDescription === 'toolbox') {
                                 // mode: toolbox
-                                if(self.options.errorDescription === 'toolbox') {
-                                    $input.tooltip({
-                                            title: $error.join(', '),
-                                            placement: 'top',
-                                            trigger: 'manual'
-                                        })
-                                        .tooltip('show')
-                                        .keypress(function() {
-                                            $input.tooltip('destroy');
-                                            $input.closest('.form-group').removeClass('has-error');
-                                        });
-                                }
-                                // mode: text
-                                else {
-                                    $('<div class="text-danger"></div>')
-                                        .text($error.join(', '))
-                                        .insertAfter($input);
-                                
-                                    $input.keypress(function() {
-                                        $input.next('.text-danger').remove();
+                                $input
+                                    .tooltip({
+                                        title: $error.join(', '),
+                                        placement: 'top',
+                                        trigger: 'manual'
+                                    })
+                                    .tooltip('show')
+                                    .keypress(function() {
+                                        $input.tooltip('destroy');
                                         $input.closest('.form-group').removeClass('has-error');
                                     });
-                                }
-                                    
+                            } else {
+                                // mode: text
+                                $('<div class="text-danger"></div>')
+                                    .text($error.join(', '))
+                                    .insertAfter($input);
+
+                                $input.keypress(function() {
+                                    $input.next('.text-danger').remove();
+                                    $input.closest('.form-group').removeClass('has-error');
+                                });
                             }
+
                         }
                     }
 
@@ -128,8 +129,11 @@
         trigger: function(event, context, params)
         {
             
-            var self = this,
-                context = context || self;
+            var self = this;
+            
+            if(!context) {
+                context = self;
+            }
             
             if(self.events[event].length === 0)
                 return true;
@@ -168,7 +172,7 @@
             $status
                 .html(text)
                 .show()
-                .removeClass().addClass('status');;
+                .removeClass().addClass('status');
         
             if(cssClass) {
                 $status.addClass(cssClass);
@@ -186,31 +190,28 @@
         }
     };
     
-    $.fn.form = function()
-    {
-        var $frm = this;
+    $.fn.form = function() {
+        var $frm = this, 
+            formHandlerInstance;
         
         if(arguments.length === 0 || typeof arguments[0] === "object") {
-            var formHandlerInstance = new Form($frm, arguments.length === 0 ? null : arguments[0]);
+            formHandlerInstance = new Form($frm, arguments.length === 0 ? null : arguments[0]);
             $frm.data('instance', formHandlerInstance);
-        }
-        else {
-            var formHandlerInstance = $frm.data('instance');
-            
+        } else {            
             // check if handler initialized on form
             if(arguments[0] === 'isInitialized') {
                 return !!$frm.data('instance');
             }
             
+            formHandlerInstance = $frm.data('instance');
+            
             // call method
             var methodName = arguments[0],
-                formHandlerInstance = $frm.data('instance'),
                 formHandlerMethod = formHandlerInstance[methodName];
             
             if(arguments.length === 1) {
                 formHandlerMethod.call(formHandlerInstance);
-            }
-            else {
+            } else {
                 formHandlerMethod.apply(formHandlerInstance, Array.prototype.slice.call(arguments, 1));
             }
         }

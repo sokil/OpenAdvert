@@ -42,7 +42,7 @@ var TemplateEngine = function() {
             render: function(scope) {
                 var rendered = template;
                 for(var key in scope) {
-                    rendered = rendered.replace(new RegExp('\{\{' + key + '\}\}', 'g'), scope[key]);
+                    rendered = rendered.replace('{{' + key + '}}', scope[key]);
                 }
                 return rendered;
             }
@@ -53,13 +53,13 @@ var TemplateEngine = function() {
 /**
  * Init grid buttons
  */
-$.fn.tableButtons = function(options) {
+$.fn.tableButtons = function(customOptions) {
     
     var $table = $(this),
         options = $.extend({}, {
             deleteSignature: 'delete',
             activateSignature: 'activate',
-        }, options || {});
+        }, customOptions || {});
     
     var local = new i18n(options.messages);
     
@@ -161,7 +161,7 @@ $.fn.tableButtons = function(options) {
            for(var i = 0; i < arguments.length; i++) {
                for(key in arguments[i]) {
                    if(merged[key] && typeof arguments[i][key] === 'object') {
-                       merged[key] = this._merge(merged[key], arguments[i][key])
+                       merged[key] = this._merge(merged[key], arguments[i][key]);
                    }
                    else {
                        merged[key] = arguments[i][key];

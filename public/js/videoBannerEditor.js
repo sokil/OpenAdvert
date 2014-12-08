@@ -96,7 +96,7 @@ videoBannerEditor.prototype = {
                     case this.VALIDATE_ERROR_SIZE:
                         alert(self.i18n.getMessage('Wrong file size'));
                         break;
-                };
+                }
             },
             onerror: function(message) {
                 this.$tr.find('.progress').closest('TR').remove();
