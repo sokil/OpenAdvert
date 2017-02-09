@@ -6,6 +6,10 @@ Advertisement platform. _Currently not maintained_
 Installation
 ------------
 
+### Dependencies
+
+* [PHPVast](https://github.com/sokil/php-vast)
+
 ### Libux packages:
 
 * ffmpeg
