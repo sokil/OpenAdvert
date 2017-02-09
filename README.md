@@ -8,7 +8,7 @@ Installation
 
 ### Dependencies
 
-* [PHPVast](https://github.com/sokil/php-vast)
+* [PHP-VAST](https://github.com/sokil/php-vast)
 
 ### Libux packages:
 
