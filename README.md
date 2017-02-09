@@ -1,12 +1,16 @@
-Requirements
+OpenAdvert
 ============
 
-Packages:
+Advertisement platform. _Currently not maintained_
+
+Installation
+------------
+
+### Libux packages:
 
 * ffmpeg
 
-PHP modules
------------
+### PHP modules
 
 * GeoIP
 ```
@@ -19,11 +23,4 @@ sudo apt-get install php5-geoip
 * get_browser
 ```
 http://tempdownloads.browserscap.com/stream.asp?Full_PHP_BrowscapINI
-```
-
-Crontab
--------
-* Add user
-```
-sudo pw useradd ad -d /nonexistent -s /usr/sbin/nologin -G www
 ```
