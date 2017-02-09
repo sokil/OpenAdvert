@@ -9,9 +9,12 @@ Installation
 ### Dependencies
 
 * [PHP-VAST](https://github.com/sokil/php-vast)
+* [PHPMongo](https://github.com/sokil/php-mongo)
+* [PHPMongo Migrator](https://github.com/sokil/php-mongo-migrator)
 
 ### Libux packages:
 
+* mongodb
 * ffmpeg
 
 ### PHP modules
